@@ -1,0 +1,73 @@
+{
+  "repo": "hashrail",
+  "language": "TypeScript",
+  "category": "Frontend and market data",
+  "goal": "Replay market ticks into an order book view model and WebSocket protocol fixture.",
+  "review_model": {
+    "terms": [
+      "tick pressure",
+      "book depth",
+      "view drift",
+      "render cost"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "tick pressure",
+      "signal": 53,
+      "slack": 23,
+      "drag": 22,
+      "confidence": 82,
+      "score": 145,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "book depth",
+      "signal": 80,
+      "slack": 48,
+      "drag": 32,
+      "confidence": 66,
+      "score": 178,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "view drift",
+      "signal": 76,
+      "slack": 32,
+      "drag": 13,
+      "confidence": 50,
+      "score": 195,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "render cost",
+      "signal": 88,
+      "slack": 38,
+      "drag": 11,
+      "confidence": 71,
+      "score": 252,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "tick pressure",
+      "signal": 77,
+      "slack": 43,
+      "drag": 24,
+      "confidence": 51,
+      "score": 176,
+      "lane": "ship"
+    }
+  ]
+}

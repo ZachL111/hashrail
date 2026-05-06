@@ -1,0 +1,6 @@
+name,focus,signal,slack,drag,confidence,score,lane
+baseline,tick pressure,53,23,22,82,145,ship
+stress,book depth,80,48,32,66,178,ship
+edge,view drift,76,32,13,50,195,ship
+recovery,render cost,88,38,11,71,252,ship
+stale,tick pressure,77,43,24,51,176,ship
