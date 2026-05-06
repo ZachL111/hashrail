@@ -62,3 +62,13 @@ node dist/tests/policy.test.js
 node dist/tests/domainReview.test.js
 
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-hashrail-detail.ps1
+
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-hashrail-properties.ps1
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-hashrail-golden.ps1
+if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
