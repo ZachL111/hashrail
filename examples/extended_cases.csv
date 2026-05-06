@@ -1,0 +1,7 @@
+name,demand,capacity,latency,risk,weight,score,decision,reason
+baseline,59,89,17,10,6,117,review,frontend and market data baseline scenario exercises the review path for bounded failure handling
+pressure,76,71,30,20,10,53,review,frontend and market data pressure scenario exercises the review path for bounded failure handling
+surge,101,99,23,15,14,191,accept,frontend and market data surge scenario keeps the local fixture within the modeled acceptance band
+degraded,65,57,36,28,6,-51,review,frontend and market data degraded scenario exercises the review path for bounded failure handling
+recovery,90,101,19,12,10,187,accept,frontend and market data recovery scenario keeps the local fixture within the modeled acceptance band
+boundary,70,78,21,15,7,95,review,frontend and market data boundary scenario exercises the review path for bounded failure handling
